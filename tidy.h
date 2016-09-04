@@ -2,8 +2,8 @@
 #define TIDY_H
 
 #include <QObject>
-#include <tidy/tidy.h>
-#include <tidy/buffio.h>
+#include <tidy.h>
+#include <buffio.h>
 
 class tdTidy : public QObject
 {

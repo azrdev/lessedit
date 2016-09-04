@@ -2664,7 +2664,7 @@ td_markdown_render(struct buf *ob, const uint8_t *document, size_t doc_size, str
 
     text = bufnew(64);
     if (!text)
-        return;
+        return 0;
 
     /* Preallocate enough space for our buffer to avoid expanding while copying */
     bufgrow(text, doc_size);
